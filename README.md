@@ -15,3 +15,11 @@
 ========================================
 [*] Scan complete! Found 3 open ports
 ========================================
+
+
+
+Linux/Mac: gcc -pthread port_scanner.c -o port_scanner
+
+Windows (MinGW): gcc port_scanner.c -lws2_32 -o port_scanner.exe
+
+Windows (MSVC): cl port_scanner.c ws2_32.lib
